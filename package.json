@@ -1,0 +1,14 @@
+{
+  "name": "careerpilot-ai",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "dev": "pnpm --filter @careerpilot/extension dev",
+    "build": "pnpm --filter @careerpilot/extension build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "e2e": "pnpm --filter @careerpilot/extension e2e",
+    "audit": "pnpm audit --prod"
+  }
+}

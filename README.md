@@ -4,6 +4,18 @@ A local-first job-search copilot delivered as a Chrome extension (Manifest V3). 
 
 > Architecture note: the dashboard is an **extension page** (React + Vite), not a Next.js site, because local-first data lives in the extension's IndexedDB and cannot be read from another origin. See `docs/ARCHITECTURE.md`.
 
+## Screenshots
+Captured from the built extension with sample data (a synthetic resume and three sample jobs).
+
+| | |
+|---|---|
+| **Onboarding** — upload a resume, review and verify your profile<br><img src="docs/screenshots/01-onboarding.png" width="420"> | **Profile review** — every parsed field is editable; skill levels are never auto-upgraded<br><img src="docs/screenshots/02-profile-review.png" width="420"> |
+| **Dashboard** — KPIs, recommended jobs, follow-ups and interviews, activity<br><img src="docs/screenshots/03-dashboard.png" width="420"> | **Job analysis** — transparent score breakdown, evidence, "not found in resume"<br><img src="docs/screenshots/04-job-analysis.png" width="420"> |
+| **Tailored resume** — before/after comparison with truthfulness checks; LaTeX / DOCX / PDF export<br><img src="docs/screenshots/05-tailored-resume.png" width="420"> | **Tracker board** — statuses, interview and follow-up times, delete<br><img src="docs/screenshots/06-tracker-board.png" width="420"> |
+| **Follow-up calendar** — click a day to schedule a follow-up or interview (date + time)<br><img src="docs/screenshots/07-tracker-calendar.png" width="420"> | **Jobs** — filters, ranked by match score, save / analyse / open<br><img src="docs/screenshots/08-jobs.png" width="420"> |
+| **Analytics** — honest numbers, sample-size gating<br><img src="docs/screenshots/09-analytics.png" width="420"> | **Settings** — AI provider, weights, reminders, privacy<br><img src="docs/screenshots/10-settings.png" width="420"> |
+| **Dark theme**<br><img src="docs/screenshots/11-dashboard-dark.png" width="420"> | **Popup** — analyse the current job from any page<br><img src="docs/screenshots/12-popup.png" width="200"> |
+
 ## Requirements
 Node 20+ (tested on 22), pnpm 9+, Chrome 116+.
 
